@@ -25,6 +25,9 @@ class DiceTests: XCTestCase {
         var expected = false
         
         switch random {
+        case 0:
+            expected = true
+            break
         case 1:
             expected = true
             break
@@ -40,9 +43,6 @@ class DiceTests: XCTestCase {
         case 5:
             expected = true
             break
-        case 6:
-            expected = true
-            break
         default:
             expected = false
         }
@@ -52,10 +52,16 @@ class DiceTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+    
+    func testGetDice() {
+        let image: UIImage? = main.getDiceImage(index: 0)
+        XCTAssert(image == UIImage(named: "dice1"))
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
+//            main.getDiceImage(index: 5)
             // Put the code you want to measure the time of here.
         }
     }
