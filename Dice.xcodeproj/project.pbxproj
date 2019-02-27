@@ -13,6 +13,7 @@
 		D0A76B1C2226ABDE0081196E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A76B1B2226ABDE0081196E /* Assets.xcassets */; };
 		D0A76B1F2226ABDE0081196E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A76B1D2226ABDE0081196E /* LaunchScreen.storyboard */; };
 		D0A76B2A2226ABDE0081196E /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A76B292226ABDE0081196E /* DiceTests.swift */; };
+		D0A76B362226EDB20081196E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A76B352226EDB20081196E /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D0A76B252226ABDE0081196E /* DiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A76B292226ABDE0081196E /* DiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceTests.swift; sourceTree = "<group>"; };
 		D0A76B2B2226ABDE0081196E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A76B352226EDB20081196E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D0A76B132226ABDD0081196E /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				D0A76B342226ED850081196E /* Utils */,
 				D0A76B142226ABDD0081196E /* AppDelegate.swift */,
 				D0A76B162226ABDD0081196E /* ViewController.swift */,
 				D0A76B182226ABDD0081196E /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				D0A76B2B2226ABDE0081196E /* Info.plist */,
 			);
 			path = DiceTests;
+			sourceTree = "<group>";
+		};
+		D0A76B342226ED850081196E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0A76B352226EDB20081196E /* CustomButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A76B362226EDB20081196E /* CustomButton.swift in Sources */,
 				D0A76B172226ABDD0081196E /* ViewController.swift in Sources */,
 				D0A76B152226ABDD0081196E /* AppDelegate.swift in Sources */,
 			);
