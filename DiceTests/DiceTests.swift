@@ -10,7 +10,8 @@ import XCTest
 @testable import Dice
 
 class DiceTests: XCTestCase {
-
+    let main = ViewController()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,7 +20,35 @@ class DiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testRandomInteger() {
+        let random = main.getRandom()
+        var expected = false
+        
+        switch random {
+        case 1:
+            expected = true
+            break
+        case 2:
+            expected = true
+            break
+        case 3:
+            expected = true
+            break
+        case 4:
+            expected = true
+            break
+        case 5:
+            expected = true
+            break
+        case 6:
+            expected = true
+            break
+        default:
+            expected = false
+        }
+        
+        XCTAssert(expected == true)
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
